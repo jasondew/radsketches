@@ -28,6 +28,10 @@ body {
 #header .diminuitive {
   font-size: 30px;
 }
+#header img {
+  height: 100px;
+  margin: -30px 20px 25px 0;
+}
 
 #contact { background: var(--red); }
 #bio { background: var(--yellow); }

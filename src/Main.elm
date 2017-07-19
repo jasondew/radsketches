@@ -48,7 +48,8 @@ headerView : Html Msg
 headerView =
     div
         [ id "header", class "col" ]
-        [ span [ class "main" ] [ text "RADsketches" ]
+        [ img [ src "logo.png" ] []
+        , span [ class "main" ] [ text "RADsketches" ]
         , span [ class "diminuitive" ] [ text ".com" ]
         ]
 
