@@ -36,18 +36,32 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div
-        [ class "container-fluid" ]
-        [ div [ class "row" ] [ headerView ]
-        , div [ class "row" ] [ artworkView, bioView, artworkView ]
-        , div [ class "row" ] [ artworkView, contactView, artworkView ]
-        , div [ class "row" ] [ artworkView, longArtworkView ]
+        [ id "content" ]
+        [ headerView
+        , contentView
+        , footerView
+        ]
+
+
+contentView : Html Msg
+contentView =
+    div
+        [ id "main-content" ]
+        [ artworkView "picapt.png"
+        , bioView
+        , artworkView "shyguy.png"
+        , artworkView "shyguy.png"
+        , contactView
+        , artworkView "shyguy.png"
+        , artworkView "shyguy.png"
+        , longArtworkView
         ]
 
 
 headerView : Html Msg
 headerView =
     div
-        [ id "header", class "col" ]
+        [ id "header" ]
         [ img [ src "logo.png" ] []
         , span [ class "main" ] [ text "RADsketches" ]
         , span [ class "diminuitive" ] [ text ".com" ]
@@ -56,22 +70,29 @@ headerView =
 
 bioView : Html Msg
 bioView =
-    div [ id "bio", class "col" ] [ text "BIO" ]
+    div [ id "bio" ] [ text "BIO" ]
 
 
 contactView : Html Msg
 contactView =
-    div [ id "contact", class "col" ] [ text "CONTACT INFO" ]
+    div [ id "contact" ] [ text "CONTACT INFO" ]
 
 
-artworkView : Html Msg
-artworkView =
-    div [ class "artwork", class "col" ] [ text "ART" ]
+artworkView : String -> Html Msg
+artworkView imagePath =
+    div
+        [ class "artwork" ]
+        [ img [ src imagePath ] [] ]
 
 
 longArtworkView : Html Msg
 longArtworkView =
     div [ class "long-artwork", class "col col-9" ] [ text "LONG ART" ]
+
+
+footerView : Html Msg
+footerView =
+    div [ id "footer" ] [ text "© 2017 Robert Austin Dew" ]
 
 
 
