@@ -52,6 +52,11 @@ body {
 }
 
 #bio {
+  font-size: 30pt;
+  max-width: calc(50% - 2em);
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0 1em;
 }
 
 .artwork {
@@ -68,4 +73,7 @@ body {
 
 #footer {
   grid-area: footer;
+  align-self: flex-start;
+  text-align: center;
+  margin-top: 30px;
 }

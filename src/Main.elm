@@ -70,7 +70,9 @@ headerView =
 
 bioView : Html Msg
 bioView =
-    div [ id "bio" ] [ text "BIO" ]
+    div
+        [ id "bio" ]
+        [ text "Austin was once an adventurer like you until one day he took an arrow to the knee. Now, he draws." ]
 
 
 contactView : Html Msg
