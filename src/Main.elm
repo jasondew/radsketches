@@ -50,11 +50,7 @@ contentView =
         [ artworkView "picapt.png"
         , bioView
         , artworkView "shyguy.png"
-        , artworkView "shyguy.png"
-        , contactView
-        , artworkView "shyguy.png"
-        , artworkView "shyguy.png"
-        , longArtworkView
+        , longArtworkView "truck.png"
         ]
 
 
@@ -87,9 +83,11 @@ artworkView imagePath =
         [ img [ src imagePath ] [] ]
 
 
-longArtworkView : Html Msg
-longArtworkView =
-    div [ class "long-artwork", class "col col-9" ] [ text "LONG ART" ]
+longArtworkView : String -> Html Msg
+longArtworkView imagePath =
+    div
+        [ class "long-artwork" ]
+        [ img [ src imagePath ] [] ]
 
 
 footerView : Html Msg

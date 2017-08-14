@@ -54,7 +54,8 @@ body {
 }
 
 #bio {
-  font-size: 5vw;
+  font-size: 4.4vw;
+  max-font-size: 18pt;
   text-align: justify;
   line-height: 1.5em;
   margin: 0 1em;
@@ -74,6 +75,7 @@ body {
   flex-basis: 66%;
   text-align: center;
 }
+.long-artwork img { width: 100%; }
 
 #footer {
   grid-area: footer;
