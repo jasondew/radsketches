@@ -49,7 +49,7 @@ contentView =
         [ id "main-content" ]
         [ bioView
         , artworkView "picapt.png"
-        , longArtworkView "truck.png"
+        , longArtworkView "truck.jpg"
         , longArtworkView "Hokage6.jpg"
         , artworkView "shyguy.png"
         ]
