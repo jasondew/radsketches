@@ -51,6 +51,7 @@ contentView =
         , bioView
         , artworkView "shyguy.png"
         , longArtworkView "truck.png"
+        , longArtworkView "Hokage6.jpg"
         ]
 
 
@@ -92,7 +93,7 @@ longArtworkView imagePath =
 
 footerView : Html Msg
 footerView =
-    div [ id "footer" ] [ text "© 2017 Robert Austin Dew" ]
+    div [ id "footer" ] [ text "© 2017–2018 Robert Austin Dew" ]
 
 
 
