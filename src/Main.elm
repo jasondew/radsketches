@@ -47,11 +47,11 @@ contentView : Html Msg
 contentView =
     div
         [ id "main-content" ]
-        [ artworkView "picapt.png"
-        , bioView
-        , artworkView "shyguy.png"
+        [ bioView
+        , artworkView "picapt.png"
         , longArtworkView "truck.png"
         , longArtworkView "Hokage6.jpg"
+        , artworkView "shyguy.png"
         ]
 
 

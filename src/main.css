@@ -64,7 +64,8 @@ body {
 }
 
 .artwork {
-  flex: 320px;
+  flex-basis: 33%;
+  max-width: 50%;
   text-align: center;
 }
 .artwork img { width: 100%; }
@@ -72,7 +73,7 @@ body {
 .long-artwork {
   grid-area: long-artwork;
   color: white;
-  flex-basis: 66%;
+  flex-basis: 100%;
   text-align: center;
 }
 .long-artwork img { width: 100%; }
